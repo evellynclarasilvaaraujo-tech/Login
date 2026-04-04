@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #600af9 0%, #cd23f3 100%);
+            font-family: Arial,sans-serif;
+        }
+        
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #4BB543;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            border: none;
+            background-color:#600af9 ;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #cd23f3;
+        }
+    </style>
+
+    <div class= "card">
+        <div class="success-icon">&#10004;</div>
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema</h1>
+    <p>Você está logado com sucesso!</p>
+    <button onclick="location.href='index.html'">Sair</button>
+    </div>
+</body>
+</html>
