@@ -82,7 +82,6 @@
 
         <script>
 
-            //Simulação de um banco de dados com uma lista de objetos
             let usuarios = [
                 { nome: "Evellyn", email: "evellyn123@gmail.com", senha: "eve123456"},
                 { nome: "João", email: "joao123@gmail.com", senha: "joao123456"},
@@ -114,8 +113,6 @@
                 let usuarioEncontrado = usuarios.find(item => {
                     return item.email == email && item.senha == senha
                 })
-
-                //verificando se o usuário foi encontrado
                 if ( usuarioEncontrado ) {
                     //alert("Usuário logado com sucesso!");
                     window.location.href = "home.html";
