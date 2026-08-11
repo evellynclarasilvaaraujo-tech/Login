@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #5c02f9, #cd23f3);
+  background-attachment: fixed;
+}
+
+.boxLogin {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 0 20px 45px -15px rgba(30, 0, 70, 0.45);
+  animation: entrar 0.4s ease;
+}
+
+@keyframes entrar {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.icone-topo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5c02f9, #cd23f3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  box-shadow: 0 8px 18px -6px rgba(92, 2, 249, 0.5);
+}
+
+.icone-topo i {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #241a3d;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #837b98;
+  font-size: 0.88rem;
+  margin-bottom: 26px;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4a4360;
+  margin-bottom: 6px;
+}
+
+.campo-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.campo-input i.icone-campo {
+  position: absolute;
+  left: 14px;
+  color: #a99fc2;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.campo-input input {
+  width: 100%;
+  padding: 12px 14px 12px 40px;
+  border: 1.5px solid #e3ddf0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #241a3d;
+  background: #faf9fd;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.campo-input input::placeholder {
+  color: #b6aecf;
+}
+
+.campo-input input:focus {
+  outline: none;
+  border-color: #5c02f9;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(92, 2, 249, 0.12);
+}
+
+.campo-input .alternar-senha {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  width: auto;
+  padding: 4px;
+  margin: 0;
+  color: #a99fc2;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+}
+
+.campo-input .alternar-senha:hover {
+  color: #5c02f9;
+}
+
+.linha-termos {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.linha-termos input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #5c02f9;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.linha-termos label {
+  font-size: 0.82rem;
+  color: #6b6280;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+button.btn-entrar {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5c02f9, #8b1af0);
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  box-shadow: 0 10px 20px -8px rgba(92, 2, 249, 0.55);
+}
+
+button.btn-entrar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px -8px rgba(92, 2, 249, 0.6);
+}
+
+button.btn-entrar:active {
+  transform: translateY(0);
+  opacity: 0.92;
+}
+
+.rodape-login {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.78rem;
+  color: #b6aecf;
+}
+
+@media (max-width: 420px) {
+  .boxLogin {
+    padding: 32px 22px;
+  }
+}
+.alternar-senha {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 8px;
+  box-shadow: none;
+}
